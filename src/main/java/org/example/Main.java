@@ -20,5 +20,6 @@ public class Main {
 
         Functions.getExpensesList(patientList); //forEach
 
+        System.out.println(Functions.checkNoneIllPatient(patientList)); //allMatch
     }
 }

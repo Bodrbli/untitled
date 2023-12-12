@@ -79,4 +79,9 @@ public class Functions {
                 .min(comp)
                 .get();
     }
+    public static Boolean checkNoneIllPatient(List<Patient> patients) { //allMatch
+        return patients
+                .stream()
+                .allMatch(p -> p.getExpenses().size() > 0);
+    }
 }

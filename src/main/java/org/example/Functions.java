@@ -40,9 +40,7 @@ public class Functions {
 
     public static Map<LocalDate, String> getMapFromList(List<Patient> patients) { //collect
 
-        Map<LocalDate, String> localDateStringMap;
-        return localDateStringMap =
-                patients
+        return patients
                 .stream()
                 .collect(Collectors.toMap(p -> p.getBirthDate(), p -> p.getFio()));
     }

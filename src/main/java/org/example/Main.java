@@ -3,8 +3,9 @@ package org.example;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         List<Patient> patientList = Dump.getDump();
+        Thread.sleep(2000);
 
         System.out.println(Functions.getMinExpPatient(patientList)); //min
 
